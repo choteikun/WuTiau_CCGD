@@ -5,23 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public void StartSceneLoad()
+    public void StartScene()
     {
         SceneManager.LoadScene(0);
     }
-    public void SceneLoad_1()
+    public void StoreSelectScene()
     {
         SceneManager.LoadScene(1);
     }
-    public void SceneLoad_2()
+    public void GameScene()
     {
         SceneManager.LoadScene(2);
     }
-    public void SceneLoad_3()
+    public void ShoppingScene()
     {
         SceneManager.LoadScene(3);
     }
-    public void FinalSceneLoad()
+    public void FinalScene()
     {
         SceneManager.LoadScene(4);
     }

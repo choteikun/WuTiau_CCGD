@@ -9,14 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScene.unity
     guid: fdbcf347b1f5e6a4190c135d2a6e6f79
   - enabled: 1
-    path: Assets/Scenes/Scene 1.unity
-    guid: 804a1232a66c25742ade4958982d5c28
+    path: Assets/Scenes/StoreSelect.unity
+    guid: 898aa37a5ca13284ebcacf652c8c6b23
   - enabled: 1
-    path: Assets/Scenes/Scene 2.unity
+    path: Assets/Scenes/GameScene.unity
     guid: f866376328b7ccb4bb206f7c3be698f6
   - enabled: 1
-    path: Assets/Scenes/Scene 3.unity
-    guid: 898aa37a5ca13284ebcacf652c8c6b23
+    path: Assets/Scenes/Shopping.unity
+    guid: 804a1232a66c25742ade4958982d5c28
   - enabled: 1
     path: Assets/Scenes/FinalScene.unity
     guid: 141e7093435fbe949839383a5105c8e6
