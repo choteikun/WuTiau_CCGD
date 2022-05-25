@@ -70,6 +70,7 @@
     <Compile Include="Assets\FairyGUI\Scripts\Core\NAudioClip.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Tween\EaseType.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\GoWrapper.cs" />
+    <Compile Include="Assets\GSliderTest.cs" />
     <Compile Include="Assets\FairyGUI\Examples\TurnPage\BookPage.cs" />
     <Compile Include="Assets\FairyGUI\Examples\PullToRefresh\PullToRefreshMain.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Mesh\VertexBuffer.cs" />
@@ -87,6 +88,7 @@
     <Compile Include="Assets\FairyGUI\Scripts\UI\GList.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Tween\EaseManager.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Tween\GTweener.cs" />
+    <Compile Include="Assets\Bag_01.cs" />
     <Compile Include="Assets\FairyGUI\Examples\TurnCard\Card.cs" />
     <Compile Include="Assets\FairyGUI\Examples\Filter\FilterMain.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\BlendMode.cs" />
@@ -139,6 +141,7 @@
     <Compile Include="Assets\FairyGUI\Scripts\Core\Text\RTLSupport.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\Gears\GearText.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Text\FontManager.cs" />
+    <Compile Include="Assets\ItemWindow.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GScrollBar.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Mesh\MeshFactory.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Gesture\PinchGesture.cs" />
@@ -264,9 +267,8 @@
     <Compile Include="Assets\FairyGUI\Examples\Extension\MailItem.cs" />
     <Compile Include="Assets\FairyGUI\Extensions\TextMeshPro\TMPFont.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Gesture\LongPressGesture.cs" />
-    <Compile Include="Assets\Bag_01.cs" />
-    <Compile Include="Assets\ItemWindow.cs" />
-    <Compile Include="Assets\GSliderTest.cs" />
+    <Compile Include="Assets\OptionWindow.cs" />
+    <Compile Include="Assets\OptionButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -20,7 +20,7 @@ public class GSliderTest : MonoBehaviour
     {
         root = GetComponent<UIPanel>().ui;
 
-        playerSlider = root.GetChild("playerSlider").asSlider;
+        playerSlider = root.GetChild("SlideTest").asSlider;
         playerSlider.value = 0;
         playerSlider.onChanged.Add(() => {
 
