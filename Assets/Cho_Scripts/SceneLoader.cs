@@ -6,12 +6,13 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     public void StartScene()
-    {
-        SceneManager.LoadScene(0);
+    {      
+        StartCoroutine(DelayedStartScene());
     }
     public void StoreSelectScene()
     {
-        SceneManager.LoadScene(1);
+        AudioSourceController.PlaySE("Cho_Sounds", "choose_se");
+        StartCoroutine(DelayedStoreSelectScene());
     }
     public void GameScene()
     {
@@ -19,7 +20,8 @@ public class SceneLoader : MonoBehaviour
     }
     public void ShoppingScene()
     {
-        SceneManager.LoadScene(3);
+        AudioSourceController.PlaySE("Cho_Sounds", "choose_se");
+        StartCoroutine(DelayedShoppingScene());
     }
     public void FinalScene()
     {
@@ -28,5 +30,20 @@ public class SceneLoader : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+    IEnumerator DelayedStartScene()
+    {
+        yield return new WaitForSeconds(0.3f);
+        SceneManager.LoadScene(0);
+    }
+    IEnumerator DelayedStoreSelectScene()
+    {
+        yield return new WaitForSeconds(0.3f);
+        SceneManager.LoadScene(1);
+    }
+    IEnumerator DelayedShoppingScene()
+    {
+        yield return new WaitForSeconds(0.3f);
+        SceneManager.LoadScene(3);
     }
 }

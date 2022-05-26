@@ -65,6 +65,7 @@
     <Compile Include="Assets\FairyGUI\Scripts\Tween\TweenManager.cs" />
     <Compile Include="Assets\FairyGUI\Examples\Emoji\EmojiParser.cs" />
     <Compile Include="Assets\FairyGUI\Examples\ModalWaiting\Window4.cs" />
+    <Compile Include="Assets\OptionButton.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Stats.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\HitTest\HitTestContext.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\NAudioClip.cs" />
@@ -205,6 +206,7 @@
     <Compile Include="Assets\FairyGUI\Scripts\UI\UIPainter.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Utils\Html\HtmlButton.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Utils\Html\HtmlParseOptions.cs" />
+    <Compile Include="Assets\OptionWindow.cs" />
     <Compile Include="Assets\FairyGUI\Examples\LoopList\LoopListMain.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Utils\ByteBuffer.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\StageEngine.cs" />
@@ -267,8 +269,7 @@
     <Compile Include="Assets\FairyGUI\Examples\Extension\MailItem.cs" />
     <Compile Include="Assets\FairyGUI\Extensions\TextMeshPro\TMPFont.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Gesture\LongPressGesture.cs" />
-    <Compile Include="Assets\OptionWindow.cs" />
-    <Compile Include="Assets\OptionButton.cs" />
+    <Compile Include="Assets\AudioSourceController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
