@@ -270,6 +270,10 @@
     <Compile Include="Assets\FairyGUI\Extensions\TextMeshPro\TMPFont.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Gesture\LongPressGesture.cs" />
     <Compile Include="Assets\AudioSourceController.cs" />
+    <Compile Include="Assets\Scripts\CoinButton.cs" />
+    <Compile Include="Assets\Scripts\CoinText.cs" />
+    <Compile Include="Assets\Scripts\ShopSystem.cs" />
+    <Compile Include="Assets\Scripts\ItemButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

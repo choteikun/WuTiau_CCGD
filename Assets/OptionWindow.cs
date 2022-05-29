@@ -7,10 +7,14 @@ public class OptionWindow : Window
 {
     protected override void OnInit()
     {
-        this.contentPane = UIPackage.CreateObject("", "").asCom;
-        GSlider soundSlider = contentPane.GetChild("").asSlider;
-        soundSlider.value = 1;
-        soundSlider.onChanged.Add(() => { Debug.Log("滑動條當前的值===" + soundSlider.value); });
+        this.contentPane = UIPackage.CreateObject("OptionPackage", "OptionWindow").asCom;    
+
+        GSlider soundSlider = this.contentPane.GetChild("SoundSlider").asSlider;
+        GSlider screenBrightness = this.contentPane.GetChild("ScreenBrightness").asSlider;
+        soundSlider.value = 10;
+        soundSlider.onChanged.Add(() => { Debug.Log("音量大小當前的值===" + soundSlider.value); });
+        screenBrightness.value = 10;
+        screenBrightness.onChanged.Add(() => { Debug.Log("畫面亮度條當前的值===" + soundSlider.value); });
     }
     void Update()
     {
