@@ -6,6 +6,7 @@ public class AudioSourceController :MonoBehaviour
 {
 
     public static Dictionary<string, AudioClip> audioDic = new Dictionary<string, AudioClip>();
+    public static float volumeAllScale;
 
     /// <summary>
     /// 需要播放某個音效的時候需要呼叫此方法就可以了
@@ -16,7 +17,7 @@ public class AudioSourceController :MonoBehaviour
     {
         AudioClip clip = LoadClip(dir, name.ToLower());
         if (clip != null)
-            AudioSource.PlayClipAtPoint(clip, Vector3.zero);
+            AudioSource.PlayClipAtPoint(clip, Vector3.zero, volumeAllScale);
         else                                                   
             Debug.LogError("Clip is Missing" + name);
     }
