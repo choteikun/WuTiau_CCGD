@@ -11,7 +11,7 @@ public class OptionWindow : Window
 
         GSlider soundSlider = this.contentPane.GetChild("SoundSlider").asSlider;
         GSlider screenBrightness = this.contentPane.GetChild("ScreenBrightness").asSlider;
-        soundSlider.value = 10;
+        soundSlider.value = AudioSourceController.volumeAllScale * 100;
         soundSlider.onChanged.Add(() => 
         {
             AudioSourceController.volumeAllScale = (float)soundSlider.value / 100;

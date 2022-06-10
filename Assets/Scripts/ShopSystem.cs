@@ -28,7 +28,7 @@ public class ShopSystem
             return false;
         }
 
-        if (Get () - coin < 0) {
+        if (Get() - coin < 0) {
             return false;
         }
 
