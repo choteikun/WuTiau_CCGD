@@ -21,6 +21,6 @@ public class TimeUI : MonoBehaviour
 
     void UpdateTime()
     {
-        timeText.text = $"{GameTime.Day:00天}:{GameTime.Hour:00時}:{GameTime.Minute:00分}";
+        timeText.text = $"{GameTime.Day + 1:00天}:{GameTime.Hour:00時}:{GameTime.Minute:00分}";
     }
 }

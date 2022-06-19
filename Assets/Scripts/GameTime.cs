@@ -14,7 +14,8 @@ public class GameTime : MonoBehaviour
     public static int Hour { get; private set; }
     public static int Day { get; private set; }
 
-    float minuteToRealTime  = 0.25f;//現實每0.25秒等於遊戲一分鐘/遊戲一天:現實3分鐘/遊戲4小時:現實1分鐘/遊戲4分鐘:現實1秒
+    [Header("預設0.25f，值越小遊戲時間越快")]
+    public float minuteToRealTime  = 0.25f;//現實每0.25秒等於遊戲一分鐘/遊戲一天:現實3分鐘/遊戲4小時:現實1分鐘/遊戲4分鐘:現實1秒
 
     private float timer;
 

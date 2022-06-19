@@ -59,6 +59,8 @@ public class StoreSelect : MonoBehaviour
         myStoreObj.myStoreNextLv = 2;
         myStoreObj.myCoin = 750;
         myStoreObj.initialMyCoin = 750;
+        myStoreObj.stockingStaff = 0;
+        myStoreObj.shippingStaff = 0;
         myStoreObj.curStaffs = 1;
         myStoreObj.curInputItems = 0;
         myStoreObj.curOutputItems = 0;
@@ -81,6 +83,8 @@ public class StoreSelect : MonoBehaviour
         myStoreObj.myStoreNextLv = 2;
         myStoreObj.myCoin = 3000;
         myStoreObj.initialMyCoin = 3000;
+        myStoreObj.stockingStaff = 0;
+        myStoreObj.shippingStaff = 0;
         myStoreObj.curStaffs = 1;
         myStoreObj.curInputItems = 0;
         myStoreObj.curOutputItems = 0;
@@ -103,6 +107,8 @@ public class StoreSelect : MonoBehaviour
         myStoreObj.myStoreNextLv = 2;
         myStoreObj.myCoin = 1500;
         myStoreObj.initialMyCoin = 1500;
+        myStoreObj.stockingStaff = 0;
+        myStoreObj.shippingStaff = 0;
         myStoreObj.curStaffs = 1;
         myStoreObj.curInputItems = 0;
         myStoreObj.curOutputItems = 0;
