@@ -66,14 +66,14 @@
     <Compile Include="Assets\FairyGUI\Scripts\Tween\TweenManager.cs" />
     <Compile Include="Assets\FairyGUI\Examples\Emoji\EmojiParser.cs" />
     <Compile Include="Assets\FairyGUI\Examples\ModalWaiting\Window4.cs" />
-    <Compile Include="Assets\OptionButton.cs" />
+    <Compile Include="Assets\Scripts\OptionButton.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Stats.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\HitTest\HitTestContext.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\NAudioClip.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Tween\EaseType.cs" />
-    <Compile Include="Assets\WholesaleMarket.cs" />
+    <Compile Include="Assets\Scripts\WholesaleMarket.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\GoWrapper.cs" />
-    <Compile Include="Assets\GSliderTest.cs" />
+    <Compile Include="Assets\Scripts\GSliderTest.cs" />
     <Compile Include="Assets\FairyGUI\Examples\TurnPage\BookPage.cs" />
     <Compile Include="Assets\FairyGUI\Examples\PullToRefresh\PullToRefreshMain.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Mesh\VertexBuffer.cs" />
@@ -88,11 +88,12 @@
     <Compile Include="Assets\Scripts\ItemButton.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\DisplayObject.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GGraph.cs" />
+    <Compile Include="Assets\Scripts\StoreSelect.cs" />
     <Compile Include="Assets\FairyGUI\Examples\Gesture\GestureMain.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GList.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Tween\EaseManager.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Tween\GTweener.cs" />
-    <Compile Include="Assets\GameTime.cs" />
+    <Compile Include="Assets\Scripts\GameTime.cs" />
     <Compile Include="Assets\Bag_01.cs" />
     <Compile Include="Assets\FairyGUI\Examples\TurnCard\Card.cs" />
     <Compile Include="Assets\FairyGUI\Examples\Filter\FilterMain.cs" />
@@ -121,9 +122,11 @@
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\FairyGUI\Examples\HitTest\HitTestMain.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Utils\ToolSet.cs" />
+    <Compile Include="Assets\FairyGUI\Examples\LoopList\LoopListMain.cs" />
     <Compile Include="Assets\FairyGUI\Examples\Transition\TransitionMain.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GButton.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\Gears\IAnimationGear.cs" />
+    <Compile Include="Assets\Scripts\DontDestroyOnLoad.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\DragDropManager.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Stage.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\Gears\GearDisplay.cs" />
@@ -138,6 +141,7 @@
     <Compile Include="Assets\FairyGUI\Examples\Curve\CurveMain.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Gesture\SwipeGesture.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Utils\UBBParser.cs" />
+    <Compile Include="Assets\Scripts\MyStoreObj.cs" />
     <Compile Include="Assets\FairyGUI\Examples\RenderTexture\RenderImage.cs" />
     <Compile Include="Assets\FairyGUI\Examples\VirtualList\VirtualListMain.cs" />
     <Compile Include="Assets\FairyGUI\Examples\BundleUsage\BundleUsageMain.cs" />
@@ -147,7 +151,7 @@
     <Compile Include="Assets\FairyGUI\Scripts\Core\Text\RTLSupport.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\Gears\GearText.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Text\FontManager.cs" />
-    <Compile Include="Assets\ItemWindow.cs" />
+    <Compile Include="Assets\Scripts\ItemWindow.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GScrollBar.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Mesh\MeshFactory.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Gesture\PinchGesture.cs" />
@@ -166,8 +170,8 @@
     <Compile Include="Assets\FairyGUI\Scripts\Utils\Html\HtmlParser.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\TranslationHelper.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\UIConfig.cs" />
-    <Compile Include="Assets\StatDataEditor.cs" />
-    <Compile Include="Assets\MyStore.cs" />
+    <Compile Include="Assets\Scripts\StatDataEditor.cs" />
+    <Compile Include="Assets\Scripts\MyStore.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Mesh\RegularPolygonMesh.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\EMRenderSupport.cs" />
     <Compile Include="Assets\FairyGUI\Examples\TurnCard\TurnCardMain.cs" />
@@ -196,7 +200,9 @@
     <Compile Include="Assets\FairyGUI\Scripts\UI\Gears\GearDisplay2.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Text\IKeyboard.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\Gears\GearFontSize.cs" />
+    <Compile Include="Assets\Scripts\StoreLV.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GTextField.cs" />
+    <Compile Include="Assets\Scripts\SkinShop.cs" />
     <Compile Include="Assets\FairyGUI\Examples\CutScene\CutSceneMain.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GImage.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Event\EventListener.cs" />
@@ -209,12 +215,13 @@
     <Compile Include="Assets\FairyGUI\Scripts\UI\GObject.cs" />
     <Compile Include="Assets\FairyGUI\Examples\TurnPage\TurnPageMain.cs" />
     <Compile Include="Assets\FairyGUI\Examples\HeadBar\HeadBarMain.cs" />
+    <Compile Include="Assets\Scripts\WholesaleMarketObj.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Mesh\PlaneMesh.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\UIPainter.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Utils\Html\HtmlButton.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Utils\Html\HtmlParseOptions.cs" />
-    <Compile Include="Assets\OptionWindow.cs" />
-    <Compile Include="Assets\FairyGUI\Examples\LoopList\LoopListMain.cs" />
+    <Compile Include="Assets\Scripts\OptionWindow.cs" />
+    <Compile Include="Assets\Scripts\StoreLoopList.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Utils\ByteBuffer.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\StageEngine.cs" />
     <Compile Include="Assets\FairyGUI\Examples\Extension\ExtensionMain.cs" />
@@ -227,11 +234,12 @@
     <Compile Include="Assets\FairyGUI\Examples\Bag\IconManager.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Text\TextFormat.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Text\BitmapFont.cs" />
+    <Compile Include="Assets\Scripts\IntrodutiocPlace.cs" />
     <Compile Include="Assets\FairyGUI\Examples\CutScene\LevelManager.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GComboBox.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Utils\XMLList.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Text\RichTextField.cs" />
-    <Compile Include="Assets\StatData.cs" />
+    <Compile Include="Assets\Scripts\StatData.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Utils\ZipReader.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\Gears\GearColor.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\Gears\GearIcon.cs" />
@@ -253,7 +261,7 @@
     <Compile Include="Assets\FairyGUI\Examples\PullToRefresh\ScrollPaneHeader.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Event\EventBridge.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Utils\Html\HtmlPageContext.cs" />
-    <Compile Include="Assets\TimeUI.cs" />
+    <Compile Include="Assets\Scripts\TimeUI.cs" />
     <Compile Include="Assets\FairyGUI\Examples\Particles\ParticlesMain.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GLabel.cs" />
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
@@ -261,6 +269,7 @@
     <Compile Include="Assets\FairyGUI\Scripts\Tween\TweenPropType.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Utils\Html\HtmlInput.cs" />
     <Compile Include="Assets\FairyGUI\Extensions\TextMeshPro\TMPTextFormat.cs" />
+    <Compile Include="Assets\Scripts\GameSceneUI.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Tween\GTween.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\Action\PlayTransitionAction.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\ShaderConfig.cs" />
@@ -279,8 +288,9 @@
     <Compile Include="Assets\FairyGUI\Examples\Extension\MailItem.cs" />
     <Compile Include="Assets\FairyGUI\Extensions\TextMeshPro\TMPFont.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Gesture\LongPressGesture.cs" />
-    <Compile Include="Assets\AudioSourceController.cs" />
-    <Compile Include="Assets\Scripts\SkinShop.cs" />
+    <Compile Include="Assets\Scripts\AudioSourceController.cs" />
+    <Compile Include="Assets\Scripts\GameTargetUI.cs" />
+    <Compile Include="Assets\FinalSceneCanvas.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -6,6 +6,7 @@ public class ShopSystem
 {
     private const string COIN_KEY = "Coin";
     public static Action<int> OnCoinChange = delegate {};
+    public MyStoreObj myStoreObj;
 
     public static int Get()
     {
@@ -18,7 +19,7 @@ public class ShopSystem
         if (coin < 0) {
             return false;
         }
-        CoinChange (Get() + coin);
+        CoinChange(Get() + coin);
         return true;
     }
 
@@ -41,15 +42,15 @@ public class ShopSystem
     {
         CoinChange(0);
     }
-    private static void CoinChange(int coin)
+    public static void CoinChange(int coin)
     {
         PlayerPrefs.SetInt(COIN_KEY, coin);
         PlayerPrefs.Save();
-        OnCoinChange (PlayerPrefs.GetInt(COIN_KEY, 0));
-    }
-
-    public static void CoinChange()
-    {
         OnCoinChange(PlayerPrefs.GetInt(COIN_KEY, 0));
     }
+
+    //public static void CoinChange()
+    //{
+    //    OnCoinChange(PlayerPrefs.GetInt(COIN_KEY, 0));
+    //}
 }

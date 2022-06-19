@@ -10,7 +10,7 @@ public class CoinText : MonoBehaviour
     {
         ShopSystem.OnCoinChange += OnCoinChange;
         coinText = transform.GetComponent<Text>();
-        ShopSystem.CoinChange();
+        ShopSystem.CoinChange(0);
     }
 
     private void OnCoinChange(int coin)

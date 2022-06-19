@@ -13,11 +13,11 @@ public class ItemButton : MonoBehaviour
     {
         ShopSystem.OnCoinChange += OnCoinChange;
         itemButton = transform.GetComponent<Button>();
-        ShopSystem.CoinChange();
+        //ShopSystem.CoinChange(0);
         //updatePriceEveryDay();
     }
 
-    private void OnCoinChange(int coin)
+    private void OnCoinChange(int coin)//錢夠了才能買
     {
         itemButton.interactable = coin >= price ? true : false;
     }

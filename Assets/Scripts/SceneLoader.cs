@@ -9,15 +9,22 @@ public class SceneLoader : MonoBehaviour
     {
         AudioSourceController.PlaySE("Cho_Sounds", "choose_se");
         StartCoroutine(DelayedStartScene());
+
     }
     public void StoreSelectScene()
     {
         AudioSourceController.PlaySE("Cho_Sounds", "choose_se");
         StartCoroutine(DelayedStoreSelectScene());
     }
+    public void SettingPositionScene()
+    {
+        AudioSourceController.PlaySE("Cho_Sounds", "choose_se");
+        StartCoroutine(DelayedSettingPositionScene());
+    }
     public void GameScene()
     {
-        SceneManager.LoadScene(2);
+        AudioSourceController.PlaySE("Cho_Sounds", "choose_se");
+        StartCoroutine(DelayedGameScene());
     }
     public void ShoppingScene()
     {
@@ -26,7 +33,8 @@ public class SceneLoader : MonoBehaviour
     }
     public void FinalScene()
     {
-        SceneManager.LoadScene(4);
+        AudioSourceController.PlaySE("Cho_Sounds", "choose_se");
+        StartCoroutine(DelayedFinalScene());
     }
     public void ExitGame()
     {
@@ -42,9 +50,24 @@ public class SceneLoader : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         SceneManager.LoadScene(1);
     }
+    IEnumerator DelayedSettingPositionScene()
+    {
+        yield return new WaitForSeconds(0.3f);
+        SceneManager.LoadScene(2);
+    }
     IEnumerator DelayedShoppingScene()
     {
         yield return new WaitForSeconds(0.3f);
         SceneManager.LoadScene(3);
+    }
+    IEnumerator DelayedGameScene()
+    {
+        yield return new WaitForSeconds(0.3f);
+        SceneManager.LoadScene(4);
+    }
+    IEnumerator DelayedFinalScene()
+    {
+        yield return new WaitForSeconds(0.3f);
+        SceneManager.LoadScene(5);
     }
 }

@@ -6,16 +6,6 @@ public class SkinShop : MonoBehaviour
 {
     public GameObject skinShopObj;
 
-    void Start()
-    {
-
-    }
-
-
-    void Update()
-    {
-        
-    }
     public void SkinShopBuy()
     {
         GameObject blueSkinQA = skinShopObj.transform.Find("Buy&Check(Image)").gameObject;

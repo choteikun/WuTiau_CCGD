@@ -535,7 +535,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 
+        value: "\u65E5\u5E38\u691C\u67FB\u958B\u59CB\u3002\u3002\u3002\r\n\u691C\u67FB\u7D50\u679C\uFF1A\u7570\u5E38\u306A\u3057"
         type: 0
         typeString: 
       - title: Sequence
@@ -557,13 +557,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 242
-        y: 129
+        x: 241
+        y: 139
         width: 160
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasZoom: 0.94000006
   syncInfo:
     syncActors: 0
     syncItems: 0
