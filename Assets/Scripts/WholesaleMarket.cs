@@ -110,8 +110,8 @@ public class WholesaleMarket : MonoBehaviour
 
                 Sur1.color = alpha0;
                 Sur2.color = alpha0;
-                Clo1.color = alpha0;
-                Clo2.color = alpha0;
+                Med1.color = alpha0;
+                Med2.color = alpha0;
                 break;
         }
     }

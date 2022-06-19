@@ -15,7 +15,7 @@ MonoBehaviour:
   myCoin: 3000
   initialMyCoin: 3000
   earnCoin: 500
-  kindOfStore: "\u5357\u90CA"
+  kindOfStore: "\u5317\u90CA"
   myStoreLv: 1
   myStoreNextLv: 2
   levelUpCost: 5000

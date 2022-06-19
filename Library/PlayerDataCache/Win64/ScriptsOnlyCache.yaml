@@ -85,10 +85,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -157,9 +155,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9186}
     - Class: 114
-      Script: {instanceID: 11260}
+      Script: {instanceID: 9190}
     - Class: 114
-      Script: {instanceID: 30678}
+      Script: {instanceID: 11262}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -234,15 +232,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9186}
     - Class: 114
-      Script: {instanceID: 10434}
+      Script: {instanceID: 10436}
     - Class: 114
-      Script: {instanceID: 11118}
+      Script: {instanceID: 11120}
     - Class: 114
-      Script: {instanceID: 11260}
+      Script: {instanceID: 11262}
     - Class: 114
-      Script: {instanceID: 11360}
+      Script: {instanceID: 11362}
     - Class: 114
-      Script: {instanceID: 11948}
+      Script: {instanceID: 11950}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -303,11 +301,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9186}
     - Class: 114
-      Script: {instanceID: 10018}
+      Script: {instanceID: 10020}
     - Class: 114
-      Script: {instanceID: 10434}
+      Script: {instanceID: 10436}
     - Class: 114
-      Script: {instanceID: 11260}
+      Script: {instanceID: 11262}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -368,9 +366,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9186}
     - Class: 114
-      Script: {instanceID: 10434}
+      Script: {instanceID: 10436}
     - Class: 114
-      Script: {instanceID: 11260}
+      Script: {instanceID: 11262}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -527,29 +525,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9186}
     - Class: 114
-      Script: {instanceID: 9190}
+      Script: {instanceID: 9192}
     - Class: 114
-      Script: {instanceID: 9338}
+      Script: {instanceID: 9340}
     - Class: 114
-      Script: {instanceID: 9562}
+      Script: {instanceID: 9564}
     - Class: 114
-      Script: {instanceID: 9736}
+      Script: {instanceID: 9738}
     - Class: 114
-      Script: {instanceID: 9822}
+      Script: {instanceID: 9824}
     - Class: 114
-      Script: {instanceID: 10382}
+      Script: {instanceID: 10384}
     - Class: 114
-      Script: {instanceID: 10434}
+      Script: {instanceID: 10436}
     - Class: 114
-      Script: {instanceID: 10734}
+      Script: {instanceID: 10736}
     - Class: 114
-      Script: {instanceID: 11174}
+      Script: {instanceID: 11176}
     - Class: 114
-      Script: {instanceID: 11260}
+      Script: {instanceID: 11262}
     - Class: 114
-      Script: {instanceID: 11552}
+      Script: {instanceID: 11554}
     - Class: 114
-      Script: {instanceID: 11838}
+      Script: {instanceID: 11840}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -622,11 +620,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9186}
     - Class: 114
-      Script: {instanceID: 9324}
+      Script: {instanceID: 9326}
     - Class: 114
-      Script: {instanceID: 10434}
+      Script: {instanceID: 10436}
     - Class: 114
-      Script: {instanceID: 11260}
+      Script: {instanceID: 11262}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -3428,6 +3426,12 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
+      Hash: 595cd7c3dfb7adcb8a2d36d0ba7883b5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FinalSceneCanvas
+  - hash:
+      serializedVersion: 2
       Hash: f7858108331b563fb41b80b729297acd
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -4416,12 +4420,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameTargetUI
-  - hash:
-      serializedVersion: 2
-      Hash: 595cd7c3dfb7adcb8a2d36d0ba7883b5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FinalSceneCanvas
   platform: 19
   scenePathNames:
   - Assets/Scenes/StartScene.unity
