@@ -644,6 +644,7 @@ GameObject:
   - component: {fileID: 515365056}
   - component: {fileID: 515365055}
   - component: {fileID: 515365058}
+  - component: {fileID: 515365059}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -749,6 +750,19 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &515365059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515365054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b0377460f18cfb4bbaa9d674d397be5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameBGM: {fileID: 1379719503812679245, guid: cfaeaaae7b03e06488da8970386f7db4, type: 3}
 --- !u!1 &568676705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1547,7 +1561,7 @@ GameObject:
   - component: {fileID: 2812955121562884260}
   - component: {fileID: 2812955121562884263}
   m_Layer: 0
-  m_Name: pl3
+  m_Name: pl2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1708,6 +1722,7 @@ MonoBehaviour:
   - {fileID: 2812955121617473208}
   - {fileID: 2812955122540088295}
   - {fileID: 2812955121562884261}
+  - {fileID: 2812955122252090576}
   myStoreObj: {fileID: 11400000, guid: 3b3c0c84d4912ec4280bf99a6be5531b, type: 2}
   myCoinTextRate: 100
   myTokenCoinTextRate: 10
@@ -1949,7 +1964,7 @@ GameObject:
   - component: {fileID: 2812955122252090579}
   - component: {fileID: 2812955122252090578}
   m_Layer: 0
-  m_Name: pl1
+  m_Name: pl3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2113,7 +2128,7 @@ GameObject:
   - component: {fileID: 2812955122540088294}
   - component: {fileID: 2812955122540088289}
   m_Layer: 0
-  m_Name: pl2
+  m_Name: pl1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

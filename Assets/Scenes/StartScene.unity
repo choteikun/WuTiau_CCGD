@@ -342,6 +342,7 @@ GameObject:
   - component: {fileID: 372766292}
   - component: {fileID: 372766291}
   - component: {fileID: 372766295}
+  - component: {fileID: 372766296}
   m_Layer: 0
   m_Name: Stage Camera
   m_TagString: Untagged
@@ -460,6 +461,19 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372766290}
   m_Enabled: 1
+--- !u!114 &372766296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372766290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b0377460f18cfb4bbaa9d674d397be5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameBGM: {fileID: 1379719503812679245, guid: cfaeaaae7b03e06488da8970386f7db4, type: 3}
 --- !u!1 &1500962773
 GameObject:
   m_ObjectHideFlags: 0

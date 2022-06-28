@@ -9,6 +9,8 @@ public class MyStoreObj : ScriptableObject
     public int myCoin;
     [Header("玩家錢包初始值")]
     public int initialMyCoin;
+    [Header("玩家代幣")]
+    public int myTokenCoin;
 
     [Header("一次賣出賺的錢")]
     public int earnCoin;

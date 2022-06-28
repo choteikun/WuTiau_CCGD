@@ -11,11 +11,18 @@ public class GameSceneUI : MonoBehaviour
     public WholesaleMarketObj wholesaleMarketObj;
     public GameObject rootGameUi;
 
+    [Header("隨著時間光照顏色進行變化R")]
+    public AnimationCurve bgImageR;
+    [Header("隨著時間光照顏色進行變化G")]
+    public AnimationCurve bgImageG;
+    [Header("隨著時間光照顏色進行變化B")]
+    public AnimationCurve bgImageB;
+
     GameObject wholesaleMarketPanel;
     GameObject storeLvPanel;
     GameObject siltEventObj;//淤積事件Obj
 
-    [SerializeField]
+    [SerializeField][Space(10)]
     private MyStoreObj myStoreObj;
 
     Image day1;
@@ -26,9 +33,15 @@ public class GameSceneUI : MonoBehaviour
     Image day6;
     Image day7;
 
+    Image bgImage;
     Image sunnyImage;
     Image siltImage;
-    
+    Image roadImage;
+
+    Image surStoreImage;
+    Image medStoreImage;
+    Image cloStoreImage;
+
 
     float siltationPeriodDay;
 
@@ -50,20 +63,21 @@ public class GameSceneUI : MonoBehaviour
         wholesaleMarketPanel = rootGameUi.transform.Find("WholesaleMarket").gameObject;
         storeLvPanel = rootGameUi.transform.Find("StoreLv").gameObject;
 
+        surStoreImage = rootGameUi.transform.Find("SugarStore(Image)").gameObject.GetComponent<Image>();
+        medStoreImage = rootGameUi.transform.Find("DrugStore(Image)").gameObject.GetComponent<Image>();
+        cloStoreImage = rootGameUi.transform.Find("ClothStore(Image)").gameObject.GetComponent<Image>();
+
         if (myStoreObj.kindOfStore == "糖郊")
         {
             rootGameUi.transform.Find("SugarStoreTag(Image)").gameObject.GetComponent<Image>().color = alpha1;
-            rootGameUi.transform.Find("SugarStore(Image)").gameObject.GetComponent<Image>().color = alpha1;
         }
         else if (myStoreObj.kindOfStore == "南郊")
         {
             rootGameUi.transform.Find("DrugStoreTag(Image)").gameObject.GetComponent<Image>().color = alpha1;
-            rootGameUi.transform.Find("DrugStore(Image)").gameObject.GetComponent<Image>().color = alpha1;
         }
         else if (myStoreObj.kindOfStore == "北郊")
         {
             rootGameUi.transform.Find("ClothStoreTag(Image)").gameObject.GetComponent<Image>().color = alpha1;
-            rootGameUi.transform.Find("ClothStore(Image)").gameObject.GetComponent<Image>().color = alpha1;
         }
         day1 = rootGameUi.transform.Find("Day(Image)1").gameObject.GetComponent<Image>();
         day2 = rootGameUi.transform.Find("Day(Image)2").gameObject.GetComponent<Image>();
@@ -73,6 +87,8 @@ public class GameSceneUI : MonoBehaviour
         day6 = rootGameUi.transform.Find("Day(Image)6").gameObject.GetComponent<Image>();
         day7 = rootGameUi.transform.Find("Day(Image)7").gameObject.GetComponent<Image>();
 
+        roadImage = rootGameUi.transform.Find("road_BG(Image)").gameObject.GetComponent<Image>();
+        bgImage = rootGameUi.transform.Find("game_BG(Image)").gameObject.GetComponent<Image>();
         sunnyImage = rootGameUi.transform.Find("sunny(Image)").gameObject.GetComponent<Image>();
         siltImage = rootGameUi.transform.Find("silt(Image)").gameObject.GetComponent<Image>();
         siltEventObj = rootGameUi.transform.Find("SiltEvent").gameObject;
@@ -84,6 +100,22 @@ public class GameSceneUI : MonoBehaviour
         if (!wholesaleMarket)
         {
             wholesaleMarket = GetComponent<WholesaleMarket>();
+        }
+
+        bgImage.color = new Color(bgImageR.Evaluate(GameTime.Hour), bgImageG.Evaluate(GameTime.Hour), bgImageB.Evaluate(GameTime.Hour), 1);//Background隨著一天時間改變顏色
+        roadImage.color = new Color(bgImageR.Evaluate(GameTime.Hour), bgImageG.Evaluate(GameTime.Hour), bgImageB.Evaluate(GameTime.Hour), 1);
+
+        if (myStoreObj.kindOfStore == "糖郊")
+        {
+            surStoreImage.color = new Color(bgImageR.Evaluate(GameTime.Hour), bgImageG.Evaluate(GameTime.Hour), bgImageB.Evaluate(GameTime.Hour), 1);
+        }
+        else if (myStoreObj.kindOfStore == "南郊")
+        {
+            medStoreImage.color = new Color(bgImageR.Evaluate(GameTime.Hour), bgImageG.Evaluate(GameTime.Hour), bgImageB.Evaluate(GameTime.Hour), 1);
+        }
+        else if (myStoreObj.kindOfStore == "北郊")
+        {
+            cloStoreImage.color = new Color(bgImageR.Evaluate(GameTime.Hour), bgImageG.Evaluate(GameTime.Hour), bgImageB.Evaluate(GameTime.Hour), 1);
         }
 
         if (GameTime.Day == 0)
@@ -184,17 +216,17 @@ public class GameSceneUI : MonoBehaviour
     }
     public void SiltationPeriodEvent()//淤積期事件
     {
-        if (Probability(Mathf.Round(wholesaleMarket.siltationPeriodCurve.Evaluate(siltationPeriodDay) * 100)))//按淤積期給定機率
+        if (Probability(Mathf.Round(wholesaleMarket.siltationPeriodCurve.Evaluate(siltationPeriodDay - 1) * 100)))//按淤積期的animationCurve給定機率
         {
-            siltEventObj.SetActive(true);
             wholesaleMarket.curItemPrice += (int)Mathf.Round(wholesaleMarketObj.itemPrice * 0.1f);//如果觸發機率批發市場原物料價格上漲110%
+            siltEventObj.SetActive(true);
             siltImage.color = alpha1;
             sunnyImage.color = alpha0;
         }
         else
         {
             siltImage.color = alpha0;
-            sunnyImage.color = alpha1;
+            sunnyImage.color = alpha1;  
         }
     }
     public void OperateButton()

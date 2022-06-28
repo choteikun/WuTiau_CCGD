@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7369ce7f632a8f3408c5775880b8b7c3, type: 3}
   m_Name: MyStore
   m_EditorClassIdentifier: 
-  myCoin: 2300
+  myCoin: 3000
   initialMyCoin: 3000
-  earnCoin: 500
-  kindOfStore: "\u5317\u90CA"
+  myTokenCoin: 0
+  earnCoin: 200
+  kindOfStore: "\u5357\u90CA"
   myStoreLv: 1
   myStoreNextLv: 2
   levelUpCost: 5000
@@ -32,5 +33,5 @@ MonoBehaviour:
   stockingNeedTime: 17
   shippingNeedTime: 17
   kindOfStoret_refCoefficient: 2
-  myTargetCoin: 50000
+  myTargetCoin: 10000
   missionState: 0

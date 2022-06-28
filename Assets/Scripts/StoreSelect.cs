@@ -70,7 +70,7 @@ public class StoreSelect : MonoBehaviour
         myStoreObj.levelUpCost = 5000;
         myStoreObj.stockingOnceAmount = 200;
         myStoreObj.shippingOnceAmount = 200;
-        myStoreObj.earnCoin = 500;
+        myStoreObj.earnCoin = 200;
 
         store_Select = Store.SurStore;
         Alpha0();
@@ -94,7 +94,7 @@ public class StoreSelect : MonoBehaviour
         myStoreObj.levelUpCost = 5000;
         myStoreObj.stockingOnceAmount = 50;
         myStoreObj.shippingOnceAmount = 50;
-        myStoreObj.earnCoin = 500;
+        myStoreObj.earnCoin = 200;
 
         store_Select = Store.MedStore;
         Alpha0();
@@ -118,7 +118,7 @@ public class StoreSelect : MonoBehaviour
         myStoreObj.levelUpCost = 5000;
         myStoreObj.stockingOnceAmount = 100;
         myStoreObj.shippingOnceAmount = 100;
-        myStoreObj.earnCoin = 500;
+        myStoreObj.earnCoin = 200;
 
         store_Select = Store.CloStore;
         Alpha0();

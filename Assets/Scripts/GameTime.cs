@@ -10,6 +10,7 @@ public class GameTime : MonoBehaviour
     public static Action OnHourChanged;
     public static Action OnDayChanged;
     public static bool UpdateEveryDay;
+
     public static int Minute { get; private set; }
     public static int Hour { get; private set; }
     public static int Day { get; private set; }
@@ -36,14 +37,14 @@ public class GameTime : MonoBehaviour
             Minute++;
             OnMinuteChanged?.Invoke();//?·N«ä¬°null check
             if (Minute >= 60)
-            {
+            {        
                 Hour++;
                 Minute = 0;
                 OnHourChanged?.Invoke();
             }
             if (Hour >= 12 && !UpdateEveryDay) 
             {
-                Day++;        
+                Day++;  
                 Hour = 0;
                 UpdateEveryDay = true;
                 OnDayChanged?.Invoke();

@@ -216,6 +216,7 @@
     <Compile Include="Assets\FairyGUI\Examples\TurnPage\TurnPageMain.cs" />
     <Compile Include="Assets\FairyGUI\Examples\HeadBar\HeadBarMain.cs" />
     <Compile Include="Assets\Scripts\WholesaleMarketObj.cs" />
+    <Compile Include="Assets\Scripts\FinalSceneCanvas.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Mesh\PlaneMesh.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\UIPainter.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Utils\Html\HtmlButton.cs" />
@@ -290,7 +291,7 @@
     <Compile Include="Assets\FairyGUI\Scripts\Gesture\LongPressGesture.cs" />
     <Compile Include="Assets\Scripts\AudioSourceController.cs" />
     <Compile Include="Assets\Scripts\GameTargetUI.cs" />
-    <Compile Include="Assets\FinalSceneCanvas.cs" />
+    <Compile Include="Assets\Scripts\BackGroundMusic.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

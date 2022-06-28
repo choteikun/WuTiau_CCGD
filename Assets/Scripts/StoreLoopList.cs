@@ -60,7 +60,6 @@ public class StoreLoopList : MonoBehaviour
             }
         }
         //Debug.Log(_list.GetFirstChildInView());
-
         switch (_list.GetFirstChildInView() + 1)
         {
             case 1:

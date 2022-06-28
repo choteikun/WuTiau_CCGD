@@ -76,6 +76,7 @@ public class IntrodutiocPlace : MonoBehaviour
 
     private void Start()
     {
+
         switchButton = false;
         _hsinKangChien = setPlace.transform.Find("HsinKangChien(Image)").gameObject.GetComponent<Image>();
         _foTou = setPlace.transform.Find("FoTou(Image)").gameObject.GetComponent<Image>();
@@ -94,6 +95,8 @@ public class IntrodutiocPlace : MonoBehaviour
         A3 = setPlace.transform.Find("A3(Image)").gameObject.GetComponent<Image>();
         A4 = setPlace.transform.Find("A4(Image)").gameObject.GetComponent<Image>();
         A5 = setPlace.transform.Find("A5(Image)").gameObject.GetComponent<Image>();
+
+        HsinKangChien();
     }
 
     public void HsinKangChien()//使用按鈕定義出開始遊戲後的原物料價格&雇傭成本

@@ -182,21 +182,21 @@ public class StoreLV : MonoBehaviour
             myStoreObj.maxInputItems = 2000;
             myStoreObj.maxOutputItems = 1200;
             myStoreObj.maxStaffs = 3;
-            myStoreObj.levelUpCost = 5000;
+            myStoreObj.levelUpCost = 3000;
         }
         else if (myStoreObj.myStoreLv == 2)
         {
             myStoreObj.maxInputItems = 6000;
             myStoreObj.maxOutputItems = 3600;
             myStoreObj.maxStaffs = 5;
-            myStoreObj.levelUpCost = 10000;
+            myStoreObj.levelUpCost = 5000;
         }
         else if (myStoreObj.myStoreLv == 3)
         {
             myStoreObj.maxInputItems = 12000;
             myStoreObj.maxOutputItems = 7200;
             myStoreObj.maxStaffs = 7;
-            myStoreObj.levelUpCost = 15000;
+            myStoreObj.levelUpCost = 0;
         }
         //商店下一級的預覽
         if (myStoreObj.myStoreNextLv == 2)
@@ -228,21 +228,21 @@ public class StoreLV : MonoBehaviour
             myStoreObj.maxInputItems = 500;
             myStoreObj.maxOutputItems = 300;
             myStoreObj.maxStaffs = 2;
-            myStoreObj.levelUpCost = 5000;
+            myStoreObj.levelUpCost = 3000;
         }
         else if (myStoreObj.myStoreLv == 2)
         {
             myStoreObj.maxInputItems = 1500;
             myStoreObj.maxOutputItems = 900;
             myStoreObj.maxStaffs = 4;
-            myStoreObj.levelUpCost = 10000;
+            myStoreObj.levelUpCost = 5000;
         }
         else if (myStoreObj.myStoreLv == 3)
         {
             myStoreObj.maxInputItems = 3000;
             myStoreObj.maxOutputItems = 1800;
             myStoreObj.maxStaffs = 5;
-            myStoreObj.levelUpCost = 15000;
+            myStoreObj.levelUpCost = 0;
         }
         //商店下一級的預覽
         if (myStoreObj.myStoreNextLv == 2)
@@ -274,21 +274,21 @@ public class StoreLV : MonoBehaviour
             myStoreObj.maxInputItems = 1000;
             myStoreObj.maxOutputItems = 600;
             myStoreObj.maxStaffs = 3;
-            myStoreObj.levelUpCost = 5000;
+            myStoreObj.levelUpCost = 3000;
         }
         else if (myStoreObj.myStoreLv == 2)
         {
             myStoreObj.maxInputItems = 3000;
             myStoreObj.maxOutputItems = 1800;
             myStoreObj.maxStaffs = 5;
-            myStoreObj.levelUpCost = 10000;
+            myStoreObj.levelUpCost = 5000;
         }
         else if (myStoreObj.myStoreLv == 3)
         {
             myStoreObj.maxInputItems = 6000;
             myStoreObj.maxOutputItems = 3600;
             myStoreObj.maxStaffs = 6;
-            myStoreObj.levelUpCost = 15000;
+            myStoreObj.levelUpCost = 0;
         }
         //商店下一級的預覽
         if (myStoreObj.myStoreNextLv == 2)

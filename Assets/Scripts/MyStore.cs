@@ -75,6 +75,11 @@ public class MyStore : MonoBehaviour
 
     void Update()
     {
+        if (myStoreObj.myCoin < 0)//任務失敗
+        {
+            myStoreObj.missionState = false;
+            SceneManager.LoadScene(5);
+        }
 
         curGameTimeMinute = GameTime.Day * 12 + GameTime.Hour * 60 + GameTime.Minute;
         if (myStoreObj.stockingStaff > 0 && stockingOnce) //有人力且允許出貨一次時，才會開始進行搬貨運算
@@ -203,11 +208,6 @@ public class MyStore : MonoBehaviour
     }
     public void StockingOnce()//單次備貨
     {
-        if (myStoreObj.myCoin < 0)//任務失敗
-        {
-            myStoreObj.missionState = false;
-            SceneManager.LoadScene(5);
-        }
         if (myStoreObj.curInputItems > 0)
         {
             myStoreObj.curInputItems -= myStoreObj.stockingOnceAmount;

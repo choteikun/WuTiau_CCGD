@@ -75,7 +75,6 @@ public class WholesaleMarket : MonoBehaviour
         if (GameTime.UpdateEveryDay)
         {
             updateEveryDay();
-            playerStoreObj.myCoin -= storeStaffDailySalary;//每日員工薪水
         }
         itemAmountText.text = itemAmount.ToString();
         curItemPriceText.text = curItemPrice.ToString();
@@ -122,11 +121,11 @@ public class WholesaleMarket : MonoBehaviour
     }
     public void SetPriceFluctuation(float fluctuation)//SetPriceFluctuation用來設一軸向的值再利用animation.curve功能可以得出另一軸向的值
     {
-        curItemPrice = (int)Mathf.Round(wholesaleMarketObj.itemPrice * priceFluctuationCurve.Evaluate(fluctuation));//價格(另一軸向)在浮動域裡變化
+        curItemPrice = (int)Mathf.Round(wholesaleMarketObj.itemPrice * priceFluctuationCurve.Evaluate(fluctuation));//價格(另一軸向)浮動變化
     }
-    public void SetPerHireFluctuation(float fluctuation)//SetPriceFluctuation用來設一軸向的值再利用animation.curve功能可以得出另一軸向的值
+    public void SetPerHireFluctuation(float fluctuation)//SetPerHireFluctuation用來設一軸向的值再利用animation.curve功能可以得出另一軸向的值
     {
-        curCostPerHire = (int)Mathf.Round(wholesaleMarketObj.costPerHire * costPerHireFluctuationCurve.Evaluate(fluctuation));//僱傭成本(另一軸向)在浮動域裡變化
+        curCostPerHire = (int)Mathf.Round(wholesaleMarketObj.costPerHire * costPerHireFluctuationCurve.Evaluate(fluctuation));//僱傭成本(另一軸向)浮動變化
     }
     public void ItemBuy()//購買原物料按鈕
     {
